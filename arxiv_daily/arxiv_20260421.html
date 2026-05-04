@@ -7,7 +7,7 @@
     <title>arXiv 每日论文精选</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="static/styles.css?v=1776751100">
+    <link rel="stylesheet" href="static/styles.css?v=1776751663">
     <script src="static/tailwind.config.js"></script>
 
     <style>
@@ -128,7 +128,7 @@
             <div class="flex flex-wrap gap-4 text-sm">
                 <div class="flex items-center">
                     <span class="text-gray-500 mr-1"><i class="fa fa-file-text-o"></i> 总论文数:</span>
-                    <span id="total-papers" class="font-semibold text-primary">203</span>
+                    <span id="total-papers" class="font-semibold text-primary">192</span>
                 </div>
                 <div class="flex items-center">
                     <span class="text-gray-500 mr-1"><i class="fa fa-star"></i> 精选论文数:</span>
@@ -147,7 +147,7 @@
         <!-- 筛选器 -->
         <div class="mb-4 flex flex-col sm:flex-row justify-between items-start sm:items-center">
             <div class="text-gray-700 text-sm mb-2 sm:mb-0">
-                <span id="display-count" class="font-medium">显示 203 篇论文 (共 203 篇)</span>
+                <span id="display-count" class="font-medium">显示 192 篇论文 (共 192 篇)</span>
             </div>
             <div class="flex space-x-2">
                 <button id="show-all"
@@ -164,861 +164,6 @@
         <!-- 论文列表 -->
         <div id="papers-container" class="grid grid-cols-1 gap-4">
             <!--
- * @Author: Doragd doragd@users.noreply.github.com
- * @Date: 2025-10-09 23:23:38
- * @LastEditors: Doragd doragd@users.noreply.github.com
- * @LastEditTime: 2025-10-10 00:41:41
- * @FilePath: /Algorithm-Practice-in-Industry/paperBotV2/frontend/templates/normal_paper_template.html
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
-<div class="simple-paper-card p-3 collapsed-level-2">
-    <div class="flex justify-between items-start mb-1">
-        <h3 class="text-base font-medium text-primary hover:underline transition-colors">
-            <a href="https://www.alphaxiv.org/abs/2604.18584v1" target="_blank" rel="noopener noreferrer">
-                
-            </a>
-        </h3>
-        <span class="score-badge bg-gray-100 text-gray-800">
-            <i class="fa fa-star mr-1"></i>0/10
-        </span>
-    </div>
-    
-    <div class="paper-details">
-        <div class="mb-2 text-base text-gray-700">
-            MathNet: a Global Multimodal Benchmark for Mathematical Reasoning and Retrieval
-        </div>
-        
-        <div class="mb-2 text-sm text-gray-600 italic">
-            <i class="fa fa-user-circle-o text-gray-500 mr-1"></i>Shaden Alshammari, Kevin Wen, Abrar Zainal, Mark Hamilton, Navid Safaei, Sultan ...
-        </div>
-        
-        
-        
-        
-        <div class="mb-2">
-            <strong class="text-gray-700 text-sm"><i class="fa fa-thumbs-up text-green-500 mr-1"></i>个性化推荐理由:</strong>
-            <p class="text-gray-600 text-sm mt-1"></p>
-        </div>
-        
-        <div class="flex flex-wrap items-center text-xs text-gray-500 pt-2 border-t border-gray-100">
-                <i class="fa fa-calendar-o mr-1"></i> 2026-04-20 17:59:49
-                <span class="mx-2">|</span>
-                <a href="https://arxiv.org/abs/2604.18584v1" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-                    arXiv:2604.18584v1
-                </a>
-                <span class="mx-2">|</span>
-                <div class="flex flex-wrap"><span class="category-tag">cs.AI</span><span class="category-tag">cs.DL</span><span class="category-tag">cs.IR</span><span class="category-tag">cs.LG</span></div>
-            </div>
-            
-            
-            <details class="border-t border-gray-200 pt-4 mt-4">
-                 <summary class="text-sm text-primary cursor-pointer"> 
-                     查看完整摘要 <i class="fa fa-chevron-down ml-1 text-xs"></i> 
-                 </summary> 
-                 <div class="abstract-content mt-2 p-3 bg-gray-50 rounded-md text-sm text-gray-700">
-                    Mathematical problem solving remains a challenging test of reasoning for large language and multimodal models, yet existing benchmarks are limited in size, language coverage, and task diversity. We introduce MathNet, a high-quality, large-scale, multimodal, and multilingual dataset of Olympiad-level math problems together with a benchmark for evaluating mathematical reasoning in generative models and mathematical retrieval in embedding-based systems. MathNet spans 47 countries, 17 languages, and two decades of competitions, comprising 30,676 expert-authored problems with solutions across diverse domains. In addition to the core dataset, we construct a retrieval benchmark consisting of mathematically equivalent and structurally similar problem pairs curated by human experts. MathNet supports three tasks: (i) Problem Solving, (ii) Math-Aware Retrieval, and (iii) Retrieval-Augmented Problem Solving. Experimental results show that even state-of-the-art reasoning models (78.4% for Gemini-3.1-Pro and 69.3% for GPT-5) remain challenged, while embedding models struggle to retrieve equivalent problems. We further show that retrieval-augmented generation performance is highly sensitive to retrieval quality; for example, DeepSeek-V3.2-Speciale achieves gains of up to 12%, obtaining the highest scores on the benchmark. MathNet provides the largest high-quality Olympiad dataset together with the first benchmark for evaluating mathematical problem retrieval, and we publicly release both the dataset and benchmark at https://mathnet.mit.edu.
-                </div>
-            </details>
-    </div>
-</div><!--
- * @Author: Doragd doragd@users.noreply.github.com
- * @Date: 2025-10-09 23:23:38
- * @LastEditors: Doragd doragd@users.noreply.github.com
- * @LastEditTime: 2025-10-10 00:41:41
- * @FilePath: /Algorithm-Practice-in-Industry/paperBotV2/frontend/templates/normal_paper_template.html
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
-<div class="simple-paper-card p-3 collapsed-level-2">
-    <div class="flex justify-between items-start mb-1">
-        <h3 class="text-base font-medium text-primary hover:underline transition-colors">
-            <a href="https://www.alphaxiv.org/abs/2604.18508v1" target="_blank" rel="noopener noreferrer">
-                
-            </a>
-        </h3>
-        <span class="score-badge bg-gray-100 text-gray-800">
-            <i class="fa fa-star mr-1"></i>0/10
-        </span>
-    </div>
-    
-    <div class="paper-details">
-        <div class="mb-2 text-base text-gray-700">
-            Document-as-Image Representations Fall Short for Scientific Retrieval
-        </div>
-        
-        <div class="mb-2 text-sm text-gray-600 italic">
-            <i class="fa fa-user-circle-o text-gray-500 mr-1"></i>Ghazal Khalighinejad, Raghuveer Thirukovalluru, Alexander H. Oh, Bhuwan Dhingra
-        </div>
-        
-        
-        
-        
-        <div class="mb-2">
-            <strong class="text-gray-700 text-sm"><i class="fa fa-thumbs-up text-green-500 mr-1"></i>个性化推荐理由:</strong>
-            <p class="text-gray-600 text-sm mt-1"></p>
-        </div>
-        
-        <div class="flex flex-wrap items-center text-xs text-gray-500 pt-2 border-t border-gray-100">
-                <i class="fa fa-calendar-o mr-1"></i> 2026-04-20 17:00:17
-                <span class="mx-2">|</span>
-                <a href="https://arxiv.org/abs/2604.18508v1" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-                    arXiv:2604.18508v1
-                </a>
-                <span class="mx-2">|</span>
-                <div class="flex flex-wrap"><span class="category-tag">cs.IR</span><span class="category-tag">cs.AI</span><span class="category-tag">cs.CL</span></div>
-            </div>
-            
-            
-            <details class="border-t border-gray-200 pt-4 mt-4">
-                 <summary class="text-sm text-primary cursor-pointer"> 
-                     查看完整摘要 <i class="fa fa-chevron-down ml-1 text-xs"></i> 
-                 </summary> 
-                 <div class="abstract-content mt-2 p-3 bg-gray-50 rounded-md text-sm text-gray-700">
-                    Many recent document embedding models are trained on document-as-image representations, embedding rendered pages as images rather than the underlying source. Meanwhile, existing benchmarks for scientific document retrieval, such as ArXivQA and ViDoRe, treat documents as images of pages, implicitly favoring such representations. In this work, we argue that this paradigm is not well-suited for text-rich multimodal scientific documents, where critical evidence is distributed across structured sources, including text, tables, and figures. To study this setting, we introduce ArXivDoc, a new benchmark constructed from the underlying LaTeX sources of scientific papers. Unlike PDF or image-based representations, LaTeX provides direct access to structured elements (e.g., sections, tables, figures, equations), enabling controlled query construction grounded in specific evidence types. We systematically compare text-only, image-based, and multimodal representations across both single-vector and multi-vector retrieval models. Our results show that: (1) document-as-image representations are consistently suboptimal, especially as document length increases; (2) text-based representations are most effective, even for figure-based queries, by leveraging captions and surrounding context; and (3) interleaved text+image representations outperform document-as-image approaches without requiring specialized training.
-                </div>
-            </details>
-    </div>
-</div><!--
- * @Author: Doragd doragd@users.noreply.github.com
- * @Date: 2025-10-09 23:23:38
- * @LastEditors: Doragd doragd@users.noreply.github.com
- * @LastEditTime: 2025-10-10 00:41:41
- * @FilePath: /Algorithm-Practice-in-Industry/paperBotV2/frontend/templates/normal_paper_template.html
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
-<div class="simple-paper-card p-3 collapsed-level-2">
-    <div class="flex justify-between items-start mb-1">
-        <h3 class="text-base font-medium text-primary hover:underline transition-colors">
-            <a href="https://www.alphaxiv.org/abs/2604.18424v1" target="_blank" rel="noopener noreferrer">
-                
-            </a>
-        </h3>
-        <span class="score-badge bg-gray-100 text-gray-800">
-            <i class="fa fa-star mr-1"></i>0/10
-        </span>
-    </div>
-    
-    <div class="paper-details">
-        <div class="mb-2 text-base text-gray-700">
-            Context-Aware Search and Retrieval Under Token Erasure
-        </div>
-        
-        <div class="mb-2 text-sm text-gray-600 italic">
-            <i class="fa fa-user-circle-o text-gray-500 mr-1"></i>Sara Ghasvarianjahromi, Joshua Barr, Yauhen Yakimenka, Jörg Kliewer
-        </div>
-        
-        
-        
-        
-        <div class="mb-2">
-            <strong class="text-gray-700 text-sm"><i class="fa fa-thumbs-up text-green-500 mr-1"></i>个性化推荐理由:</strong>
-            <p class="text-gray-600 text-sm mt-1"></p>
-        </div>
-        
-        <div class="flex flex-wrap items-center text-xs text-gray-500 pt-2 border-t border-gray-100">
-                <i class="fa fa-calendar-o mr-1"></i> 2026-04-20 15:42:12
-                <span class="mx-2">|</span>
-                <a href="https://arxiv.org/abs/2604.18424v1" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-                    arXiv:2604.18424v1
-                </a>
-                <span class="mx-2">|</span>
-                <div class="flex flex-wrap"><span class="category-tag">cs.IR</span><span class="category-tag">cs.IT</span></div>
-            </div>
-            
-            
-            <details class="border-t border-gray-200 pt-4 mt-4">
-                 <summary class="text-sm text-primary cursor-pointer"> 
-                     查看完整摘要 <i class="fa fa-chevron-down ml-1 text-xs"></i> 
-                 </summary> 
-                 <div class="abstract-content mt-2 p-3 bg-gray-50 rounded-md text-sm text-gray-700">
-                    This paper introduces and analyzes a search and retrieval model for RAG-like systems under {token} erasures. We provide an information-theoretic analysis of remote document retrieval when query representations are only partially preserved. The query is represented using term-frequency-based features, and semantically adaptive redundancy is assigned according to feature importance. Retrieval is performed using TF-IDF-weighted similarity. We characterize the retrieval error probability by showing that the vector of similarity margins converges to a multivariate Gaussian distribution, yielding an explicit approximation and computable upper bounds. Numerical results support the analysis, while a separate data-driven evaluation using embedding-based retrieval on real-world data shows that the same importance-aware redundancy principles extend to modern retrieval pipelines. Overall, the results show that assigning higher redundancy to semantically important query features improves retrieval reliability.
-                </div>
-            </details>
-    </div>
-</div><!--
- * @Author: Doragd doragd@users.noreply.github.com
- * @Date: 2025-10-09 23:23:38
- * @LastEditors: Doragd doragd@users.noreply.github.com
- * @LastEditTime: 2025-10-10 00:41:41
- * @FilePath: /Algorithm-Practice-in-Industry/paperBotV2/frontend/templates/normal_paper_template.html
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
-<div class="simple-paper-card p-3 collapsed-level-2">
-    <div class="flex justify-between items-start mb-1">
-        <h3 class="text-base font-medium text-primary hover:underline transition-colors">
-            <a href="https://www.alphaxiv.org/abs/2604.18362v1" target="_blank" rel="noopener noreferrer">
-                
-            </a>
-        </h3>
-        <span class="score-badge bg-gray-100 text-gray-800">
-            <i class="fa fa-star mr-1"></i>0/10
-        </span>
-    </div>
-    
-    <div class="paper-details">
-        <div class="mb-2 text-base text-gray-700">
-            ArbGraph: Conflict-Aware Evidence Arbitration for Reliable Long-Form Retrieval-Augmented Generation
-        </div>
-        
-        <div class="mb-2 text-sm text-gray-600 italic">
-            <i class="fa fa-user-circle-o text-gray-500 mr-1"></i>Qingying Niu, Yuhao Wang, Ruiyang Ren, Bohui Fang, Wayne Xin Zhao
-        </div>
-        
-        
-        
-        
-        <div class="mb-2">
-            <strong class="text-gray-700 text-sm"><i class="fa fa-thumbs-up text-green-500 mr-1"></i>个性化推荐理由:</strong>
-            <p class="text-gray-600 text-sm mt-1"></p>
-        </div>
-        
-        <div class="flex flex-wrap items-center text-xs text-gray-500 pt-2 border-t border-gray-100">
-                <i class="fa fa-calendar-o mr-1"></i> 2026-04-20 14:51:43
-                <span class="mx-2">|</span>
-                <a href="https://arxiv.org/abs/2604.18362v1" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-                    arXiv:2604.18362v1
-                </a>
-                <span class="mx-2">|</span>
-                <div class="flex flex-wrap"><span class="category-tag">cs.CL</span><span class="category-tag">cs.IR</span></div>
-            </div>
-            
-            
-            <details class="border-t border-gray-200 pt-4 mt-4">
-                 <summary class="text-sm text-primary cursor-pointer"> 
-                     查看完整摘要 <i class="fa fa-chevron-down ml-1 text-xs"></i> 
-                 </summary> 
-                 <div class="abstract-content mt-2 p-3 bg-gray-50 rounded-md text-sm text-gray-700">
-                    Retrieval-augmented generation (RAG) remains unreliable in long-form settings, where retrieved evidence is noisy or contradictory, making it difficult for RAG pipelines to maintain factual consistency. Existing approaches focus on retrieval expansion or verification during generation, leaving conflict resolution entangled with generation. To address this limitation, we propose ArbGraph, a framework for pre-generation evidence arbitration in long-form RAG that explicitly resolves factual conflicts. ArbGraph decomposes retrieved documents into atomic claims and organizes them into a conflict-aware evidence graph with explicit support and contradiction relations. On top of this graph, we introduce an intensity-driven iterative arbitration mechanism that propagates credibility signals through evidence interactions, enabling the system to suppress unreliable and inconsistent claims before final generation. In this way, ArbGraph separates evidence validation from text generation and provides a coherent evidence foundation for downstream long-form generation. We evaluate ArbGraph on two widely used long-form RAG benchmarks, LongFact and RAGChecker, using multiple large language model backbones. Experimental results show that ArbGraph consistently improves factual recall and information density while reducing hallucinations and sensitivity to retrieval noise. Additional analyses show that these gains are evident under conflicting or ambiguous evidence, highlighting the effectiveness of evidence-level conflict resolution for improving the reliability of long-form RAG. The implementation is publicly available at https://github.com/1212Judy/ArbGraph.
-                </div>
-            </details>
-    </div>
-</div><!--
- * @Author: Doragd doragd@users.noreply.github.com
- * @Date: 2025-10-09 23:23:38
- * @LastEditors: Doragd doragd@users.noreply.github.com
- * @LastEditTime: 2025-10-10 00:41:41
- * @FilePath: /Algorithm-Practice-in-Industry/paperBotV2/frontend/templates/normal_paper_template.html
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
-<div class="simple-paper-card p-3 collapsed-level-2">
-    <div class="flex justify-between items-start mb-1">
-        <h3 class="text-base font-medium text-primary hover:underline transition-colors">
-            <a href="https://www.alphaxiv.org/abs/2604.18351v1" target="_blank" rel="noopener noreferrer">
-                
-            </a>
-        </h3>
-        <span class="score-badge bg-gray-100 text-gray-800">
-            <i class="fa fa-star mr-1"></i>0/10
-        </span>
-    </div>
-    
-    <div class="paper-details">
-        <div class="mb-2 text-base text-gray-700">
-            Balanced Co-Clustering of Users and Items for Embedding Table Compression in Recommender Systems
-        </div>
-        
-        <div class="mb-2 text-sm text-gray-600 italic">
-            <i class="fa fa-user-circle-o text-gray-500 mr-1"></i>Runhao Jiang, Renchi Yang, Donghao Wu
-        </div>
-        
-        
-        
-        
-        <div class="mb-2">
-            <strong class="text-gray-700 text-sm"><i class="fa fa-thumbs-up text-green-500 mr-1"></i>个性化推荐理由:</strong>
-            <p class="text-gray-600 text-sm mt-1"></p>
-        </div>
-        
-        <div class="flex flex-wrap items-center text-xs text-gray-500 pt-2 border-t border-gray-100">
-                <i class="fa fa-calendar-o mr-1"></i> 2026-04-20 14:45:01
-                <span class="mx-2">|</span>
-                <a href="https://arxiv.org/abs/2604.18351v1" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-                    arXiv:2604.18351v1
-                </a>
-                <span class="mx-2">|</span>
-                <div class="flex flex-wrap"><span class="category-tag">cs.IR</span><span class="category-tag">cs.LG</span></div>
-            </div>
-            
-            
-            <details class="border-t border-gray-200 pt-4 mt-4">
-                 <summary class="text-sm text-primary cursor-pointer"> 
-                     查看完整摘要 <i class="fa fa-chevron-down ml-1 text-xs"></i> 
-                 </summary> 
-                 <div class="abstract-content mt-2 p-3 bg-gray-50 rounded-md text-sm text-gray-700">
-                    Recommender systems have advanced markedly over the past decade by transforming each user/item into a dense embedding vector with deep learning models. At industrial scale, embedding tables constituted by such vectors of all users/items demand a vast amount of parameters and impose heavy compute and memory overhead during training and inference, hindering model deployment under resource constraints. Existing solutions towards embedding compression either suffer from severely compromised recommendation accuracy or incur considerable computational costs. To mitigate these issues, this paper presents BACO, a fast and effective framework for compressing embedding tables. Unlike traditional ID hashing, BACO is built on the idea of exploiting collaborative signals in user-item interactions for user and item groupings, such that similar users/items share the same embeddings in the codebook. Specifically, we formulate a balanced co-clustering objective that maximizes intra-cluster connectivity while enforcing cluster-volume balance, and unify canonical graph clustering techniques into the framework through rigorous theoretical analyses. To produce effective groupings while averting codebook collapse, BACO instantiates this framework with a principled weighting scheme for users and items, an efficient label propagation solver, as well as secondary user clusters. Our extensive experiments comparing BACO against full models and 18 baselines over benchmark datasets demonstrate that BACO cuts embedding parameters by over 75% with a drop of at most 1.85% in recall, while surpassing the strongest baselines by being up to 346X faster.
-                </div>
-            </details>
-    </div>
-</div><!--
- * @Author: Doragd doragd@users.noreply.github.com
- * @Date: 2025-10-09 23:23:38
- * @LastEditors: Doragd doragd@users.noreply.github.com
- * @LastEditTime: 2025-10-10 00:41:41
- * @FilePath: /Algorithm-Practice-in-Industry/paperBotV2/frontend/templates/normal_paper_template.html
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
-<div class="simple-paper-card p-3 collapsed-level-2">
-    <div class="flex justify-between items-start mb-1">
-        <h3 class="text-base font-medium text-primary hover:underline transition-colors">
-            <a href="https://www.alphaxiv.org/abs/2604.18257v1" target="_blank" rel="noopener noreferrer">
-                
-            </a>
-        </h3>
-        <span class="score-badge bg-gray-100 text-gray-800">
-            <i class="fa fa-star mr-1"></i>0/10
-        </span>
-    </div>
-    
-    <div class="paper-details">
-        <div class="mb-2 text-base text-gray-700">
-            DocQAC: Adaptive Trie-Guided Decoding for Effective In-Document Query Auto-Completion
-        </div>
-        
-        <div class="mb-2 text-sm text-gray-600 italic">
-            <i class="fa fa-user-circle-o text-gray-500 mr-1"></i>Rahul Mehta, Kavin R, Indrajit Pal, Tushar Abhishek, Pawan Goyal, Manish Gupta
-        </div>
-        
-        
-        
-        
-        <div class="mb-2">
-            <strong class="text-gray-700 text-sm"><i class="fa fa-thumbs-up text-green-500 mr-1"></i>个性化推荐理由:</strong>
-            <p class="text-gray-600 text-sm mt-1"></p>
-        </div>
-        
-        <div class="flex flex-wrap items-center text-xs text-gray-500 pt-2 border-t border-gray-100">
-                <i class="fa fa-calendar-o mr-1"></i> 2026-04-20 13:30:45
-                <span class="mx-2">|</span>
-                <a href="https://arxiv.org/abs/2604.18257v1" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-                    arXiv:2604.18257v1
-                </a>
-                <span class="mx-2">|</span>
-                <div class="flex flex-wrap"><span class="category-tag">cs.IR</span><span class="category-tag">cs.AI</span><span class="category-tag">cs.CL</span></div>
-            </div>
-            
-            
-            <details class="border-t border-gray-200 pt-4 mt-4">
-                 <summary class="text-sm text-primary cursor-pointer"> 
-                     查看完整摘要 <i class="fa fa-chevron-down ml-1 text-xs"></i> 
-                 </summary> 
-                 <div class="abstract-content mt-2 p-3 bg-gray-50 rounded-md text-sm text-gray-700">
-                    Query auto-completion (QAC) has been widely studied in the context of web search, yet remains underexplored for in-document search, which we term DocQAC. DocQAC aims to enhance search productivity within long documents by helping users craft faster, more precise queries, even for complex or hard-to-spell terms. While global historical queries are available to both WebQAC and DocQAC, DocQAC uniquely accesses document-specific context, including the current document's content and its specific history of user query interactions. To address this setting, we propose a novel adaptive trie-guided decoding framework that uses user query prefixes to softly steer language models toward high-quality completions. Our approach introduces an adaptive penalty mechanism with tunable hyperparameters, enabling a principled trade-off between model confidence and trie-based guidance. To efficiently incorporate document context, we explore retrieval-augmented generation (RAG) and lightweight contextual document signals such as titles, keyphrases, and summaries. When applied to encoder-decoder models like T5 and BART, our trie-guided framework outperforms strong baselines and even surpasses much larger instruction-tuned models such as LLaMA-3 and Phi-3 on seen queries across both seen and unseen documents. This demonstrates its practicality for real-world DocQAC deployments, where efficiency and scalability are critical. We evaluate our method on a newly introduced DocQAC benchmark derived from ORCAS, enriched with query-document pairs. We make both the DocQAC dataset (https://bit.ly/3IGEkbH) and code (https://github.com/rahcode7/DocQAC) publicly available.
-                </div>
-            </details>
-    </div>
-</div><!--
- * @Author: Doragd doragd@users.noreply.github.com
- * @Date: 2025-10-09 23:23:38
- * @LastEditors: Doragd doragd@users.noreply.github.com
- * @LastEditTime: 2025-10-10 00:41:41
- * @FilePath: /Algorithm-Practice-in-Industry/paperBotV2/frontend/templates/normal_paper_template.html
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
-<div class="simple-paper-card p-3 collapsed-level-2">
-    <div class="flex justify-between items-start mb-1">
-        <h3 class="text-base font-medium text-primary hover:underline transition-colors">
-            <a href="https://www.alphaxiv.org/abs/2604.18234v1" target="_blank" rel="noopener noreferrer">
-                
-            </a>
-        </h3>
-        <span class="score-badge bg-gray-100 text-gray-800">
-            <i class="fa fa-star mr-1"></i>0/10
-        </span>
-    </div>
-    
-    <div class="paper-details">
-        <div class="mb-2 text-base text-gray-700">
-            Evaluating Multi-Hop Reasoning in RAG Systems: A Comparison of LLM-Based Retriever Evaluation Strategies
-        </div>
-        
-        <div class="mb-2 text-sm text-gray-600 italic">
-            <i class="fa fa-user-circle-o text-gray-500 mr-1"></i>Lorenz Brehme, Thomas Ströhle, Ruth Breu
-        </div>
-        
-        
-        
-        
-        <div class="mb-2">
-            <strong class="text-gray-700 text-sm"><i class="fa fa-thumbs-up text-green-500 mr-1"></i>个性化推荐理由:</strong>
-            <p class="text-gray-600 text-sm mt-1"></p>
-        </div>
-        
-        <div class="flex flex-wrap items-center text-xs text-gray-500 pt-2 border-t border-gray-100">
-                <i class="fa fa-calendar-o mr-1"></i> 2026-04-20 13:20:57
-                <span class="mx-2">|</span>
-                <a href="https://arxiv.org/abs/2604.18234v1" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-                    arXiv:2604.18234v1
-                </a>
-                <span class="mx-2">|</span>
-                <div class="flex flex-wrap"><span class="category-tag">cs.IR</span><span class="category-tag">cs.AI</span></div>
-            </div>
-            
-            
-            <details class="border-t border-gray-200 pt-4 mt-4">
-                 <summary class="text-sm text-primary cursor-pointer"> 
-                     查看完整摘要 <i class="fa fa-chevron-down ml-1 text-xs"></i> 
-                 </summary> 
-                 <div class="abstract-content mt-2 p-3 bg-gray-50 rounded-md text-sm text-gray-700">
-                    Retrieval-augmented generation (RAG) enhances large language models (LLMs) with external knowledge to answer questions more accurately. However, research on evaluating RAG systems-particularly the retriever component-remains limited, as most existing work focuses on single-context retrieval rather than multi-hop queries, where individual contexts may appear irrelevant in isolation but are essential when combined. In this research, we use the HotPotQA, MuSiQue, and SQuAD datasets to simulate a RAG system and compare three LLM-as-judge evaluation strategies, including our proposed Context-Aware Retriever Evaluation (CARE). Our goal is to better understand how multi-hop reasoning can be most effectively evaluated in RAG systems. Experiments with LLMs from OpenAI, Meta, and Google demonstrate that CARE consistently outperforms existing methods for evaluating multi-hop reasoning in RAG systems. The performance gains are most pronounced in models with larger parameter counts and longer context windows, while single-hop queries show minimal sensitivity to context-aware evaluation. Overall, the results highlight the critical role of context-aware evaluation in improving the reliability and accuracy of retrieval-augmented generation systems, particularly in complex query scenarios. To ensure reproducibility, we provide the complete data of our experiments at https://github.com/lorenzbrehme/CARE.
-                </div>
-            </details>
-    </div>
-</div><!--
- * @Author: Doragd doragd@users.noreply.github.com
- * @Date: 2025-10-09 23:23:38
- * @LastEditors: Doragd doragd@users.noreply.github.com
- * @LastEditTime: 2025-10-10 00:41:41
- * @FilePath: /Algorithm-Practice-in-Industry/paperBotV2/frontend/templates/normal_paper_template.html
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
-<div class="simple-paper-card p-3 collapsed-level-2">
-    <div class="flex justify-between items-start mb-1">
-        <h3 class="text-base font-medium text-primary hover:underline transition-colors">
-            <a href="https://www.alphaxiv.org/abs/2604.18200v1" target="_blank" rel="noopener noreferrer">
-                
-            </a>
-        </h3>
-        <span class="score-badge bg-gray-100 text-gray-800">
-            <i class="fa fa-star mr-1"></i>0/10
-        </span>
-    </div>
-    
-    <div class="paper-details">
-        <div class="mb-2 text-base text-gray-700">
-            Multi-LLM Token Filtering and Routing for Sequential Recommendation
-        </div>
-        
-        <div class="mb-2 text-sm text-gray-600 italic">
-            <i class="fa fa-user-circle-o text-gray-500 mr-1"></i>Wuhan Chen, Min Gao, Xin Xia, Zongwei Wang, Wentao Li, Shane Culpepper
-        </div>
-        
-        
-        
-        
-        <div class="mb-2">
-            <strong class="text-gray-700 text-sm"><i class="fa fa-thumbs-up text-green-500 mr-1"></i>个性化推荐理由:</strong>
-            <p class="text-gray-600 text-sm mt-1"></p>
-        </div>
-        
-        <div class="flex flex-wrap items-center text-xs text-gray-500 pt-2 border-t border-gray-100">
-                <i class="fa fa-calendar-o mr-1"></i> 2026-04-20 12:50:21
-                <span class="mx-2">|</span>
-                <a href="https://arxiv.org/abs/2604.18200v1" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-                    arXiv:2604.18200v1
-                </a>
-                <span class="mx-2">|</span>
-                <div class="flex flex-wrap"><span class="category-tag">cs.IR</span></div>
-            </div>
-            
-            
-            <details class="border-t border-gray-200 pt-4 mt-4">
-                 <summary class="text-sm text-primary cursor-pointer"> 
-                     查看完整摘要 <i class="fa fa-chevron-down ml-1 text-xs"></i> 
-                 </summary> 
-                 <div class="abstract-content mt-2 p-3 bg-gray-50 rounded-md text-sm text-gray-700">
-                    Large language models (LLMs) have recently shown promise in recommendation by providing rich semantic knowledge. While most existing approaches rely on external textual corpora to align LLMs with recommender systems, we revisit a more fundamental yet underexplored question: Can recommendation benefit from LLM token embeddings alone without textual input? Through a systematic empirical study, we show that directly injecting token embeddings from a single LLM into sequential recommenders leads to unstable or limited gains, due to semantic misalignment, insufficient task adaptation, and the restricted coverage of individual LLMs. To address these challenges, we propose MLTFR, a Multi-LLM Token Filtering and Routing framework for corpus-free sequential recommendation. MLTFR follows an interaction-guided LLM knowledge integration paradigm, where task-relevant token embeddings are selected via user-guided token filtering to suppress noisy and irrelevant vocabulary signals. To overcome the limitations of single-LLM representations, MLTFR integrates multiple LLM token spaces through a Mixture-of-Experts architecture, with a Fisher-weighted semantic consensus expert to balance heterogeneous experts and prevent domination during training. By jointly filtering informative tokens and aggregating complementary semantic knowledge across multiple LLMs, MLTFR enables stable and effective utilization of LLM token embeddings without textual inputs or backbone modification. Extensive experiments demonstrate that MLTFR consistently outperforms state-of-the-art sequential recommendation baselines and existing alignment methods. Our code is available at: https://github.com/ccwwhhh/MLTFR.
-                </div>
-            </details>
-    </div>
-</div><!--
- * @Author: Doragd doragd@users.noreply.github.com
- * @Date: 2025-10-09 23:23:38
- * @LastEditors: Doragd doragd@users.noreply.github.com
- * @LastEditTime: 2025-10-10 00:41:41
- * @FilePath: /Algorithm-Practice-in-Industry/paperBotV2/frontend/templates/normal_paper_template.html
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
-<div class="simple-paper-card p-3 collapsed-level-2">
-    <div class="flex justify-between items-start mb-1">
-        <h3 class="text-base font-medium text-primary hover:underline transition-colors">
-            <a href="https://www.alphaxiv.org/abs/2604.18146v1" target="_blank" rel="noopener noreferrer">
-                
-            </a>
-        </h3>
-        <span class="score-badge bg-gray-100 text-gray-800">
-            <i class="fa fa-star mr-1"></i>0/10
-        </span>
-    </div>
-    
-    <div class="paper-details">
-        <div class="mb-2 text-base text-gray-700">
-            Modular Representation Compression: Adapting LLMs for Efficient and Effective Recommendations
-        </div>
-        
-        <div class="mb-2 text-sm text-gray-600 italic">
-            <i class="fa fa-user-circle-o text-gray-500 mr-1"></i>Yunjia Xi, Menghui Zhu, Jianghao Lin, Bo Chen, Ruiming Tang, Yong Yu, Weinan Zha...
-        </div>
-        
-        
-        
-        
-        <div class="mb-2">
-            <strong class="text-gray-700 text-sm"><i class="fa fa-thumbs-up text-green-500 mr-1"></i>个性化推荐理由:</strong>
-            <p class="text-gray-600 text-sm mt-1"></p>
-        </div>
-        
-        <div class="flex flex-wrap items-center text-xs text-gray-500 pt-2 border-t border-gray-100">
-                <i class="fa fa-calendar-o mr-1"></i> 2026-04-20 12:08:58
-                <span class="mx-2">|</span>
-                <a href="https://arxiv.org/abs/2604.18146v1" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-                    arXiv:2604.18146v1
-                </a>
-                <span class="mx-2">|</span>
-                <div class="flex flex-wrap"><span class="category-tag">cs.IR</span><span class="category-tag">cs.AI</span><span class="category-tag">cs.CL</span></div>
-            </div>
-            
-            
-            <details class="border-t border-gray-200 pt-4 mt-4">
-                 <summary class="text-sm text-primary cursor-pointer"> 
-                     查看完整摘要 <i class="fa fa-chevron-down ml-1 text-xs"></i> 
-                 </summary> 
-                 <div class="abstract-content mt-2 p-3 bg-gray-50 rounded-md text-sm text-gray-700">
-                    Recently, large language models (LLMs) have advanced recommendation systems (RSs), and recent works have begun to explore how to integrate LLMs into industrial RSs. While most approaches deploy LLMs offline to generate and pre-cache augmented representations for RSs, high-dimensional representations from LLMs introduce substantial storage and computational costs. Thus, it is crucial to compress LLM representations effectively. However, we identify a counterintuitive phenomenon during representation compression: Mid-layer Representation Advantage (MRA), where representations from middle layers of LLMs outperform those from final layers in recommendation tasks. This degraded final layer renders existing compression methods, which typically compress on the final layer, suboptimal. We interpret this based on modularity theory that LLMs develop spontaneous internal functional modularity and force the final layer to specialize in the proxy training task. Thus, we propose \underline{M}odul\underline{a}r \underline{R}epresentation \underline{C}ompression (MARC) to explicitly control the modularity of LLMs. First, Modular Adjustment explicitly introduces compression and task adaptation modules, enabling the LLM to operate strictly as a representation-learning module. Next, to ground each module to its specific task, Modular Task Decoupling uses information constraints and different network structures to decouple tasks. Extensive experiments validate that MARC addresses MRA and produces efficient representations. Notably, MARC achieved a 2.82% eCPM lift in an online A/B test within a large-scale commercial search advertising scenario.
-                </div>
-            </details>
-    </div>
-</div><!--
- * @Author: Doragd doragd@users.noreply.github.com
- * @Date: 2025-10-09 23:23:38
- * @LastEditors: Doragd doragd@users.noreply.github.com
- * @LastEditTime: 2025-10-10 00:41:41
- * @FilePath: /Algorithm-Practice-in-Industry/paperBotV2/frontend/templates/normal_paper_template.html
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
-<div class="simple-paper-card p-3 collapsed-level-2">
-    <div class="flex justify-between items-start mb-1">
-        <h3 class="text-base font-medium text-primary hover:underline transition-colors">
-            <a href="https://www.alphaxiv.org/abs/2604.18096v1" target="_blank" rel="noopener noreferrer">
-                
-            </a>
-        </h3>
-        <span class="score-badge bg-gray-100 text-gray-800">
-            <i class="fa fa-star mr-1"></i>0/10
-        </span>
-    </div>
-    
-    <div class="paper-details">
-        <div class="mb-2 text-base text-gray-700">
-            The Collaboration Gap in Human-AI Work
-        </div>
-        
-        <div class="mb-2 text-sm text-gray-600 italic">
-            <i class="fa fa-user-circle-o text-gray-500 mr-1"></i>Varad Vishwarupe, Marina Jirotka, Nigel Shadbolt, Ivan Flechais
-        </div>
-        
-        
-        
-        
-        <div class="mb-2">
-            <strong class="text-gray-700 text-sm"><i class="fa fa-thumbs-up text-green-500 mr-1"></i>个性化推荐理由:</strong>
-            <p class="text-gray-600 text-sm mt-1"></p>
-        </div>
-        
-        <div class="flex flex-wrap items-center text-xs text-gray-500 pt-2 border-t border-gray-100">
-                <i class="fa fa-calendar-o mr-1"></i> 2026-04-20 11:14:40
-                <span class="mx-2">|</span>
-                <a href="https://arxiv.org/abs/2604.18096v1" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-                    arXiv:2604.18096v1
-                </a>
-                <span class="mx-2">|</span>
-                <div class="flex flex-wrap"><span class="category-tag">cs.HC</span><span class="category-tag">cs.AI</span><span class="category-tag">cs.IR</span><span class="category-tag">cs.LG</span></div>
-            </div>
-            
-            
-            <details class="border-t border-gray-200 pt-4 mt-4">
-                 <summary class="text-sm text-primary cursor-pointer"> 
-                     查看完整摘要 <i class="fa fa-chevron-down ml-1 text-xs"></i> 
-                 </summary> 
-                 <div class="abstract-content mt-2 p-3 bg-gray-50 rounded-md text-sm text-gray-700">
-                    LLMs are increasingly presented as collaborators in programming, design, writing, and analysis. Yet the practical experience of working with them often falls short of this promise. In many settings, users must diagnose misunderstandings, reconstruct missing assumptions, and repeatedly repair misaligned responses. This poster introduces a conceptual framework for understanding why such collaboration remains fragile. Drawing on a constructivist grounded theory analysis of 16 interviews with designers, developers, and applied AI practitioners working on LLM-enabled systems, and informed by literature on human-AI collaboration, we argue that stable collaboration depends not only on model capability but on the interaction's grounding conditions. We distinguish three recurrent structures of human-AI work: one-shot assistance, weak collaboration with asymmetric repair, and grounded collaboration. We propose that collaboration breaks down when the appearance of partnership outpaces the grounding capacity of the interaction and contribute a framework for discussing grounding, repair, and interaction structure in LLM-enabled work.
-                </div>
-            </details>
-    </div>
-</div><!--
- * @Author: Doragd doragd@users.noreply.github.com
- * @Date: 2025-10-09 23:23:38
- * @LastEditors: Doragd doragd@users.noreply.github.com
- * @LastEditTime: 2025-10-10 00:41:41
- * @FilePath: /Algorithm-Practice-in-Industry/paperBotV2/frontend/templates/normal_paper_template.html
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
-<div class="simple-paper-card p-3 collapsed-level-2">
-    <div class="flex justify-between items-start mb-1">
-        <h3 class="text-base font-medium text-primary hover:underline transition-colors">
-            <a href="https://www.alphaxiv.org/abs/2604.17979v1" target="_blank" rel="noopener noreferrer">
-                
-            </a>
-        </h3>
-        <span class="score-badge bg-gray-100 text-gray-800">
-            <i class="fa fa-star mr-1"></i>0/10
-        </span>
-    </div>
-    
-    <div class="paper-details">
-        <div class="mb-2 text-base text-gray-700">
-            Architecture Matters More Than Scale: A Comparative Study of Retrieval and Memory Augmentation for Financial QA Under SME Compute Constraints
-        </div>
-        
-        <div class="mb-2 text-sm text-gray-600 italic">
-            <i class="fa fa-user-circle-o text-gray-500 mr-1"></i>Jianan Liu, Jing Yang, Xianyou Li, Weiran Yan, Yichao Wu, Penghao Liang, Mengwei...
-        </div>
-        
-        
-        
-        
-        <div class="mb-2">
-            <strong class="text-gray-700 text-sm"><i class="fa fa-thumbs-up text-green-500 mr-1"></i>个性化推荐理由:</strong>
-            <p class="text-gray-600 text-sm mt-1"></p>
-        </div>
-        
-        <div class="flex flex-wrap items-center text-xs text-gray-500 pt-2 border-t border-gray-100">
-                <i class="fa fa-calendar-o mr-1"></i> 2026-04-20 08:59:41
-                <span class="mx-2">|</span>
-                <a href="https://arxiv.org/abs/2604.17979v1" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-                    arXiv:2604.17979v1
-                </a>
-                <span class="mx-2">|</span>
-                <div class="flex flex-wrap"><span class="category-tag">cs.IR</span></div>
-            </div>
-            
-            
-            <details class="border-t border-gray-200 pt-4 mt-4">
-                 <summary class="text-sm text-primary cursor-pointer"> 
-                     查看完整摘要 <i class="fa fa-chevron-down ml-1 text-xs"></i> 
-                 </summary> 
-                 <div class="abstract-content mt-2 p-3 bg-gray-50 rounded-md text-sm text-gray-700">
-                    The rapid adoption of artificial intelligence (AI) and large language models (LLMs) is transforming financial analytics by enabling natural language interfaces for reporting, decision support, and automated reasoning. However, limited empirical understanding exists regarding how different LLM-based reasoning architectures perform across realistic financial workflows, particularly under the cost, accuracy, and compliance constraints faced by small and medium-sized enterprises (SMEs). SMEs typically operate within severe infrastructure constraints, lacking cloud GPU budgets, dedicated AI teams, and API-scale inference capacity, making architectural efficiency a first-class concern. To ensure practical relevance, we introduce an explicit SME-constrained evaluation setting in which all experiments are conducted using a locally hosted 8B-parameter instruction-tuned model without cloud-scale infrastructure. This design isolates the impact of architectural choices within a realistic deployment environment. We systematically compare four reasoning architectures: baseline LLM, retrieval-augmented generation (RAG), structured long-term memory, and memory-augmented conversational reasoning across both FinQA and ConvFinQA benchmarks. Results reveal a consistent architectural inversion: structured memory improves precision in deterministic, operand-explicit tasks, while retrieval-based approaches outperform memory-centric methods in conversational, reference-implicit settings. Based on these findings, we propose a hybrid deployment framework that dynamically selects reasoning strategies to balance numerical accuracy, auditability, and infrastructure efficiency, providing a practical pathway for financial AI adoption in resource-constrained environments.
-                </div>
-            </details>
-    </div>
-</div><!--
- * @Author: Doragd doragd@users.noreply.github.com
- * @Date: 2025-10-09 23:23:38
- * @LastEditors: Doragd doragd@users.noreply.github.com
- * @LastEditTime: 2025-10-10 00:41:41
- * @FilePath: /Algorithm-Practice-in-Industry/paperBotV2/frontend/templates/normal_paper_template.html
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
-<div class="simple-paper-card p-3 collapsed-level-2">
-    <div class="flex justify-between items-start mb-1">
-        <h3 class="text-base font-medium text-primary hover:underline transition-colors">
-            <a href="https://www.alphaxiv.org/abs/2604.17906v1" target="_blank" rel="noopener noreferrer">
-                
-            </a>
-        </h3>
-        <span class="score-badge bg-gray-100 text-gray-800">
-            <i class="fa fa-star mr-1"></i>0/10
-        </span>
-    </div>
-    
-    <div class="paper-details">
-        <div class="mb-2 text-base text-gray-700">
-            Bayesian Active Learning with Gaussian Processes Guided by LLM Relevance Scoring for Dense Passage Retrieval
-        </div>
-        
-        <div class="mb-2 text-sm text-gray-600 italic">
-            <i class="fa fa-user-circle-o text-gray-500 mr-1"></i>Junyoung Kim, Anton Korikov, Jiazhou Liang, Justin Cui, Yifan Simon Liu, Qianfen...
-        </div>
-        
-        
-        
-        
-        <div class="mb-2">
-            <strong class="text-gray-700 text-sm"><i class="fa fa-thumbs-up text-green-500 mr-1"></i>个性化推荐理由:</strong>
-            <p class="text-gray-600 text-sm mt-1"></p>
-        </div>
-        
-        <div class="flex flex-wrap items-center text-xs text-gray-500 pt-2 border-t border-gray-100">
-                <i class="fa fa-calendar-o mr-1"></i> 2026-04-20 07:32:56
-                <span class="mx-2">|</span>
-                <a href="https://arxiv.org/abs/2604.17906v1" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-                    arXiv:2604.17906v1
-                </a>
-                <span class="mx-2">|</span>
-                <div class="flex flex-wrap"><span class="category-tag">cs.IR</span><span class="category-tag">cs.AI</span></div>
-            </div>
-            
-            
-            <details class="border-t border-gray-200 pt-4 mt-4">
-                 <summary class="text-sm text-primary cursor-pointer"> 
-                     查看完整摘要 <i class="fa fa-chevron-down ml-1 text-xs"></i> 
-                 </summary> 
-                 <div class="abstract-content mt-2 p-3 bg-gray-50 rounded-md text-sm text-gray-700">
-                    While Large Language Models (LLMs) exhibit exceptional zero-shot relevance modeling, their high computational cost necessitates framing passage retrieval as a budget-constrained global optimization problem. Existing approaches passively rely on first-stage dense retrievers, which leads to two limitations: (1) failing to retrieve relevant passages in semantically distinct clusters, and (2) failing to propagate relevance signals to the broader corpus. To address these limitations, we propose Bayesian Active Learning with Gaussian Processes guided by LLM relevance scoring (BAGEL), a novel framework that propagates sparse LLM relevance signals across the embedding space to guide global exploration. BAGEL models the multimodal relevance distribution across the entire embedding space with a query-specific Gaussian Process (GP) based on LLM relevance scores. Subsequently, it iteratively selects passages for scoring by strategically balancing the exploitation of high-confidence regions with the exploration of uncertain areas. Extensive experiments across four benchmark datasets and two LLM backbones demonstrate that BAGEL effectively explores and captures complex relevance distributions and outperforms LLM reranking methods under the same LLM budget on all four datasets.
-                </div>
-            </details>
-    </div>
-</div><!--
- * @Author: Doragd doragd@users.noreply.github.com
- * @Date: 2025-10-09 23:23:38
- * @LastEditors: Doragd doragd@users.noreply.github.com
- * @LastEditTime: 2025-10-10 00:41:41
- * @FilePath: /Algorithm-Practice-in-Industry/paperBotV2/frontend/templates/normal_paper_template.html
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
-<div class="simple-paper-card p-3 collapsed-level-2">
-    <div class="flex justify-between items-start mb-1">
-        <h3 class="text-base font-medium text-primary hover:underline transition-colors">
-            <a href="https://www.alphaxiv.org/abs/2604.17878v1" target="_blank" rel="noopener noreferrer">
-                
-            </a>
-        </h3>
-        <span class="score-badge bg-gray-100 text-gray-800">
-            <i class="fa fa-star mr-1"></i>0/10
-        </span>
-    </div>
-    
-    <div class="paper-details">
-        <div class="mb-2 text-base text-gray-700">
-            RankUp: Towards High-rank Representations for Large Scale Advertising Recommender Systems
-        </div>
-        
-        <div class="mb-2 text-sm text-gray-600 italic">
-            <i class="fa fa-user-circle-o text-gray-500 mr-1"></i>Jin Chen, Shangyu Zhang, Bin Hu, Chao Zhou, Junwei Pan, Gengsheng Xue, Wentao Ni...
-        </div>
-        
-        
-        
-        
-        <div class="mb-2">
-            <strong class="text-gray-700 text-sm"><i class="fa fa-thumbs-up text-green-500 mr-1"></i>个性化推荐理由:</strong>
-            <p class="text-gray-600 text-sm mt-1"></p>
-        </div>
-        
-        <div class="flex flex-wrap items-center text-xs text-gray-500 pt-2 border-t border-gray-100">
-                <i class="fa fa-calendar-o mr-1"></i> 2026-04-20 06:40:27
-                <span class="mx-2">|</span>
-                <a href="https://arxiv.org/abs/2604.17878v1" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-                    arXiv:2604.17878v1
-                </a>
-                <span class="mx-2">|</span>
-                <div class="flex flex-wrap"><span class="category-tag">cs.IR</span></div>
-            </div>
-            
-            
-            <details class="border-t border-gray-200 pt-4 mt-4">
-                 <summary class="text-sm text-primary cursor-pointer"> 
-                     查看完整摘要 <i class="fa fa-chevron-down ml-1 text-xs"></i> 
-                 </summary> 
-                 <div class="abstract-content mt-2 p-3 bg-gray-50 rounded-md text-sm text-gray-700">
-                    The scaling laws for recommender systems have been increasingly validated, where MetaFormer-based architectures consistently benefit from increased model depth, hidden dimensionality, and user behavior sequence length. However, whether representation capacity scales proportionally with parameter growth remains largely unexplored. Prior studies on RankMixer reveal that the effective rank of token representations exhibits a damped oscillatory trajectory across layers, failing to increase consistently with depth and even degrading in deeper layers. Motivated by this observation, we propose \textbf{RankUp}, an architecture designed to mitigate representation collapse and enhance expressive capacity through randomized permutation splitting over sparse features, a multi-embedding paradigm, global token integration, crossed pretrained embedding tokens and task-specific token decoupling. RankUp has been fully deployed in large-scale production across Weixin Video Accounts, Official Accounts and Moments, yielding GMV improvements of 3.41\%, 4.81\% and 2.21\%, respectively.
-                </div>
-            </details>
-    </div>
-</div><!--
- * @Author: Doragd doragd@users.noreply.github.com
- * @Date: 2025-10-09 23:23:38
- * @LastEditors: Doragd doragd@users.noreply.github.com
- * @LastEditTime: 2025-10-10 00:41:41
- * @FilePath: /Algorithm-Practice-in-Industry/paperBotV2/frontend/templates/normal_paper_template.html
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
-<div class="simple-paper-card p-3 collapsed-level-2">
-    <div class="flex justify-between items-start mb-1">
-        <h3 class="text-base font-medium text-primary hover:underline transition-colors">
-            <a href="https://www.alphaxiv.org/abs/2604.17681v1" target="_blank" rel="noopener noreferrer">
-                
-            </a>
-        </h3>
-        <span class="score-badge bg-gray-100 text-gray-800">
-            <i class="fa fa-star mr-1"></i>0/10
-        </span>
-    </div>
-    
-    <div class="paper-details">
-        <div class="mb-2 text-base text-gray-700">
-            FedCRF: A Federated Cross-domain Recommendation Method with Semantic-driven Deep Knowledge Fusion
-        </div>
-        
-        <div class="mb-2 text-sm text-gray-600 italic">
-            <i class="fa fa-user-circle-o text-gray-500 mr-1"></i>Lei Guo, Ting Yang, Hui Liu, Xu Yu, Xiaohui Han, Xinhua Wang
-        </div>
-        
-        
-        
-        
-        <div class="mb-2">
-            <strong class="text-gray-700 text-sm"><i class="fa fa-thumbs-up text-green-500 mr-1"></i>个性化推荐理由:</strong>
-            <p class="text-gray-600 text-sm mt-1"></p>
-        </div>
-        
-        <div class="flex flex-wrap items-center text-xs text-gray-500 pt-2 border-t border-gray-100">
-                <i class="fa fa-calendar-o mr-1"></i> 2026-04-20 00:37:40
-                <span class="mx-2">|</span>
-                <a href="https://arxiv.org/abs/2604.17681v1" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-                    arXiv:2604.17681v1
-                </a>
-                <span class="mx-2">|</span>
-                <div class="flex flex-wrap"><span class="category-tag">cs.IR</span></div>
-            </div>
-            
-            
-            <details class="border-t border-gray-200 pt-4 mt-4">
-                 <summary class="text-sm text-primary cursor-pointer"> 
-                     查看完整摘要 <i class="fa fa-chevron-down ml-1 text-xs"></i> 
-                 </summary> 
-                 <div class="abstract-content mt-2 p-3 bg-gray-50 rounded-md text-sm text-gray-700">
-                    As user behavior data becomes increasingly scattered across different platforms, achieving cross-domain knowledge fusion while preserving privacy has become a critical issue in recommender systems. Existing PPCDR methods usually rely on overlapping users or items as a bridge, making them inapplicable to non-overlapping scenarios. They also suffer from limitations in the collaborative modeling of global and local semantics. To this end, this paper proposes a Federated Cross-domain Recommendation method with deep knowledge Fusion (FedCRF). Using textual semantics as a cross-domain bridge, FedCRF achieves cross-domain knowledge transfer via federated semantic learning under the non-overlapping scenario. Specifically, FedCRF constructs global semantic clusters on the server side to extract shared semantic information, and designs a FGSAT module on the client side to dynamically adapt to local data distributions and alleviate cross-domain distribution shift. Meanwhile, it builds a semantic graph based on textual features to learn representations that integrate both structural and semantic information, and introduces contrastive learning constraints between global and local semantic representations to enhance semantic consistency and promote deep knowledge fusion. In this framework, only item semantic representations are shared, while user interaction data remains locally stored, effectively mitigating privacy leakage risks. Experimental results on multiple real-world datasets show that FedCRF significantly outperforms existing methods in terms of Recall@20 and NDCG@20, validating its effectiveness and superiority in non-overlapping cross-domain recommendation scenarios.
-                </div>
-            </details>
-    </div>
-</div><!--
- * @Author: Doragd doragd@users.noreply.github.com
- * @Date: 2025-10-09 23:23:38
- * @LastEditors: Doragd doragd@users.noreply.github.com
- * @LastEditTime: 2025-10-10 00:41:41
- * @FilePath: /Algorithm-Practice-in-Industry/paperBotV2/frontend/templates/normal_paper_template.html
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
-<div class="simple-paper-card p-3 collapsed-level-2">
-    <div class="flex justify-between items-start mb-1">
-        <h3 class="text-base font-medium text-primary hover:underline transition-colors">
-            <a href="https://www.alphaxiv.org/abs/2604.17680v1" target="_blank" rel="noopener noreferrer">
-                
-            </a>
-        </h3>
-        <span class="score-badge bg-gray-100 text-gray-800">
-            <i class="fa fa-star mr-1"></i>0/10
-        </span>
-    </div>
-    
-    <div class="paper-details">
-        <div class="mb-2 text-base text-gray-700">
-            MasterSet: A Large-Scale Benchmark for Must-Cite Citation Recommendation in the AI/ML Literature
-        </div>
-        
-        <div class="mb-2 text-sm text-gray-600 italic">
-            <i class="fa fa-user-circle-o text-gray-500 mr-1"></i>Md Toyaha Rahman Ratul, Zhiqian Chen, Kaiqun Fu, Taoran Ji, Lei Zhang
-        </div>
-        
-        
-        
-        
-        <div class="mb-2">
-            <strong class="text-gray-700 text-sm"><i class="fa fa-thumbs-up text-green-500 mr-1"></i>个性化推荐理由:</strong>
-            <p class="text-gray-600 text-sm mt-1"></p>
-        </div>
-        
-        <div class="flex flex-wrap items-center text-xs text-gray-500 pt-2 border-t border-gray-100">
-                <i class="fa fa-calendar-o mr-1"></i> 2026-04-20 00:34:28
-                <span class="mx-2">|</span>
-                <a href="https://arxiv.org/abs/2604.17680v1" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-                    arXiv:2604.17680v1
-                </a>
-                <span class="mx-2">|</span>
-                <div class="flex flex-wrap"><span class="category-tag">cs.IR</span></div>
-            </div>
-            
-            
-            <details class="border-t border-gray-200 pt-4 mt-4">
-                 <summary class="text-sm text-primary cursor-pointer"> 
-                     查看完整摘要 <i class="fa fa-chevron-down ml-1 text-xs"></i> 
-                 </summary> 
-                 <div class="abstract-content mt-2 p-3 bg-gray-50 rounded-md text-sm text-gray-700">
-                    The explosive growth of AI and machine learning literature -- with venues like NeurIPS and ICLR now accepting thousands of papers annually -- has made comprehensive citation coverage increasingly difficult for researchers. While citation recommendation has been studied for over a decade, existing systems primarily focus on broad relevance rather than identifying the critical set of ``must-cite'' papers: direct experimental baselines, foundational methods, and core dependencies whose omission would misrepresent a contribution's novelty or undermine reproducibility. We introduce MasterSet, a large-scale benchmark specifically designed to evaluate must-cite recommendation in the AI/ML domain. MasterSet incorporates over 150,000 papers collected from official conference proceedings/websites of 15 leading venues, serving as a comprehensive candidate pool for retrieval. We annotate citations with a three-tier labeling scheme: (I) experimental baseline status, (II) core relevance (1--5 scale), and (III) intra-paper mention frequency. Our annotation pipeline leverages an LLM-based judge, validated by human experts on a stratified sample. The benchmark task requires retrieving must-cite papers from the candidate pool given only a query paper's title and abstract, evaluated by Recall@$K$. We establish baselines using sparse retrieval, dense scientific embeddings, and graph-based methods, demonstrating that must-cite retrieval remains a challenging open problem.
-                </div>
-            </details>
-    </div>
-</div><!--
  * @Author: Doragd doragd@users.noreply.github.com
  * @Date: 2025-10-09 23:23:38
  * @LastEditors: Doragd doragd@users.noreply.github.com
@@ -1585,6 +730,63 @@
                  </summary> 
                  <div class="abstract-content mt-2 p-3 bg-gray-50 rounded-md text-sm text-gray-700">
                     Large language models (LLMs) are widely used in retrieval-augmented generation (RAG) to incorporate external knowledge at inference time. However, when retrieved contexts are noisy, incomplete, or heterogeneous, a single generation process often struggles to reconcile evidence effectively. We propose \textbf{MASS-RAG}, a multi-agent synthesis approach to retrieval-augmented generation that structures evidence processing into multiple role-specialized agents. MASS-RAG applies distinct agents for evidence summarization, evidence extraction, and reasoning over retrieved documents, and combines their outputs through a dedicated synthesis stage to produce the final answer. This design exposes multiple intermediate evidence views, allowing the model to compare and integrate complementary information before answer generation. Experiments on four benchmarks show that MASS-RAG consistently improves performance over strong RAG baselines, particularly in settings where relevant evidence is distributed across retrieved contexts.
+                </div>
+            </details>
+    </div>
+</div><!--
+ * @Author: Doragd doragd@users.noreply.github.com
+ * @Date: 2025-10-09 23:23:38
+ * @LastEditors: Doragd doragd@users.noreply.github.com
+ * @LastEditTime: 2025-10-10 00:41:41
+ * @FilePath: /Algorithm-Practice-in-Industry/paperBotV2/frontend/templates/normal_paper_template.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<div class="simple-paper-card p-3 collapsed-level-2">
+    <div class="flex justify-between items-start mb-1">
+        <h3 class="text-base font-medium text-primary hover:underline transition-colors">
+            <a href="https://www.alphaxiv.org/abs/2604.18508v1" target="_blank" rel="noopener noreferrer">
+                
+            </a>
+        </h3>
+        <span class="score-badge bg-gray-100 text-gray-800">
+            <i class="fa fa-star mr-1"></i>0/10
+        </span>
+    </div>
+    
+    <div class="paper-details">
+        <div class="mb-2 text-base text-gray-700">
+            Document-as-Image Representations Fall Short for Scientific Retrieval
+        </div>
+        
+        <div class="mb-2 text-sm text-gray-600 italic">
+            <i class="fa fa-user-circle-o text-gray-500 mr-1"></i>Ghazal Khalighinejad, Raghuveer Thirukovalluru, Alexander H. Oh, Bhuwan Dhingra
+        </div>
+        
+        
+        
+        
+        <div class="mb-2">
+            <strong class="text-gray-700 text-sm"><i class="fa fa-thumbs-up text-green-500 mr-1"></i>个性化推荐理由:</strong>
+            <p class="text-gray-600 text-sm mt-1"></p>
+        </div>
+        
+        <div class="flex flex-wrap items-center text-xs text-gray-500 pt-2 border-t border-gray-100">
+                <i class="fa fa-calendar-o mr-1"></i> 2026-04-20 17:00:17
+                <span class="mx-2">|</span>
+                <a href="https://arxiv.org/abs/2604.18508v1" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
+                    arXiv:2604.18508v1
+                </a>
+                <span class="mx-2">|</span>
+                <div class="flex flex-wrap"><span class="category-tag">cs.IR</span><span class="category-tag">cs.AI</span><span class="category-tag">cs.CL</span></div>
+            </div>
+            
+            
+            <details class="border-t border-gray-200 pt-4 mt-4">
+                 <summary class="text-sm text-primary cursor-pointer"> 
+                     查看完整摘要 <i class="fa fa-chevron-down ml-1 text-xs"></i> 
+                 </summary> 
+                 <div class="abstract-content mt-2 p-3 bg-gray-50 rounded-md text-sm text-gray-700">
+                    Many recent document embedding models are trained on document-as-image representations, embedding rendered pages as images rather than the underlying source. Meanwhile, existing benchmarks for scientific document retrieval, such as ArXivQA and ViDoRe, treat documents as images of pages, implicitly favoring such representations. In this work, we argue that this paradigm is not well-suited for text-rich multimodal scientific documents, where critical evidence is distributed across structured sources, including text, tables, and figures. To study this setting, we introduce ArXivDoc, a new benchmark constructed from the underlying LaTeX sources of scientific papers. Unlike PDF or image-based representations, LaTeX provides direct access to structured elements (e.g., sections, tables, figures, equations), enabling controlled query construction grounded in specific evidence types. We systematically compare text-only, image-based, and multimodal representations across both single-vector and multi-vector retrieval models. Our results show that: (1) document-as-image representations are consistently suboptimal, especially as document length increases; (2) text-based representations are most effective, even for figure-based queries, by leveraging captions and surrounding context; and (3) interleaved text+image representations outperform document-as-image approaches without requiring specialized training.
                 </div>
             </details>
     </div>
@@ -2340,6 +1542,63 @@
 <div class="simple-paper-card p-3 collapsed-level-2">
     <div class="flex justify-between items-start mb-1">
         <h3 class="text-base font-medium text-primary hover:underline transition-colors">
+            <a href="https://www.alphaxiv.org/abs/2604.18362v1" target="_blank" rel="noopener noreferrer">
+                
+            </a>
+        </h3>
+        <span class="score-badge bg-gray-100 text-gray-800">
+            <i class="fa fa-star mr-1"></i>0/10
+        </span>
+    </div>
+    
+    <div class="paper-details">
+        <div class="mb-2 text-base text-gray-700">
+            ArbGraph: Conflict-Aware Evidence Arbitration for Reliable Long-Form Retrieval-Augmented Generation
+        </div>
+        
+        <div class="mb-2 text-sm text-gray-600 italic">
+            <i class="fa fa-user-circle-o text-gray-500 mr-1"></i>Qingying Niu, Yuhao Wang, Ruiyang Ren, Bohui Fang, Wayne Xin Zhao
+        </div>
+        
+        
+        
+        
+        <div class="mb-2">
+            <strong class="text-gray-700 text-sm"><i class="fa fa-thumbs-up text-green-500 mr-1"></i>个性化推荐理由:</strong>
+            <p class="text-gray-600 text-sm mt-1"></p>
+        </div>
+        
+        <div class="flex flex-wrap items-center text-xs text-gray-500 pt-2 border-t border-gray-100">
+                <i class="fa fa-calendar-o mr-1"></i> 2026-04-20 14:51:43
+                <span class="mx-2">|</span>
+                <a href="https://arxiv.org/abs/2604.18362v1" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
+                    arXiv:2604.18362v1
+                </a>
+                <span class="mx-2">|</span>
+                <div class="flex flex-wrap"><span class="category-tag">cs.CL</span><span class="category-tag">cs.IR</span></div>
+            </div>
+            
+            
+            <details class="border-t border-gray-200 pt-4 mt-4">
+                 <summary class="text-sm text-primary cursor-pointer"> 
+                     查看完整摘要 <i class="fa fa-chevron-down ml-1 text-xs"></i> 
+                 </summary> 
+                 <div class="abstract-content mt-2 p-3 bg-gray-50 rounded-md text-sm text-gray-700">
+                    Retrieval-augmented generation (RAG) remains unreliable in long-form settings, where retrieved evidence is noisy or contradictory, making it difficult for RAG pipelines to maintain factual consistency. Existing approaches focus on retrieval expansion or verification during generation, leaving conflict resolution entangled with generation. To address this limitation, we propose ArbGraph, a framework for pre-generation evidence arbitration in long-form RAG that explicitly resolves factual conflicts. ArbGraph decomposes retrieved documents into atomic claims and organizes them into a conflict-aware evidence graph with explicit support and contradiction relations. On top of this graph, we introduce an intensity-driven iterative arbitration mechanism that propagates credibility signals through evidence interactions, enabling the system to suppress unreliable and inconsistent claims before final generation. In this way, ArbGraph separates evidence validation from text generation and provides a coherent evidence foundation for downstream long-form generation. We evaluate ArbGraph on two widely used long-form RAG benchmarks, LongFact and RAGChecker, using multiple large language model backbones. Experimental results show that ArbGraph consistently improves factual recall and information density while reducing hallucinations and sensitivity to retrieval noise. Additional analyses show that these gains are evident under conflicting or ambiguous evidence, highlighting the effectiveness of evidence-level conflict resolution for improving the reliability of long-form RAG. The implementation is publicly available at https://github.com/1212Judy/ArbGraph.
+                </div>
+            </details>
+    </div>
+</div><!--
+ * @Author: Doragd doragd@users.noreply.github.com
+ * @Date: 2025-10-09 23:23:38
+ * @LastEditors: Doragd doragd@users.noreply.github.com
+ * @LastEditTime: 2025-10-10 00:41:41
+ * @FilePath: /Algorithm-Practice-in-Industry/paperBotV2/frontend/templates/normal_paper_template.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<div class="simple-paper-card p-3 collapsed-level-2">
+    <div class="flex justify-between items-start mb-1">
+        <h3 class="text-base font-medium text-primary hover:underline transition-colors">
             <a href="https://www.alphaxiv.org/abs/2604.18360v1" target="_blank" rel="noopener noreferrer">
                 
             </a>
@@ -3010,6 +2269,63 @@
                  </summary> 
                  <div class="abstract-content mt-2 p-3 bg-gray-50 rounded-md text-sm text-gray-700">
                     Large language models are increasingly expected to serve as general-purpose agents that interact with external, stateful tool environments. The Model Context Protocol (MCP) and broader agent skills offer a unified interface for connecting agents with scalable real-world services, but training robust agents remains limited by the lack of realistic environments and principled mechanisms for life-long learning. In this paper, we present \textbf{Agent-World}, a self-evolving training arena for advancing general agent intelligence through scalable environments. Agent-World has two main components: (1) Agentic Environment-Task Discovery, which autonomously explores topic-aligned databases and executable tool ecosystems from thousands of real-world environment themes and synthesizes verifiable tasks with controllable difficulty; and (2) Continuous Self-Evolving Agent Training, which combines multi-environment reinforcement learning with a self-evolving agent arena that automatically identifies capability gaps through dynamic task synthesis and drives targeted learning, enabling the co-evolution of agent policies and environments. Across 23 challenging agent benchmarks, Agent-World-8B and 14B consistently outperforms strong proprietary models and environment scaling baselines. Further analyses reveal scaling trends in relation to environment diversity and self-evolution rounds, offering insights for building general agent intelligence.
+                </div>
+            </details>
+    </div>
+</div><!--
+ * @Author: Doragd doragd@users.noreply.github.com
+ * @Date: 2025-10-09 23:23:38
+ * @LastEditors: Doragd doragd@users.noreply.github.com
+ * @LastEditTime: 2025-10-10 00:41:41
+ * @FilePath: /Algorithm-Practice-in-Industry/paperBotV2/frontend/templates/normal_paper_template.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<div class="simple-paper-card p-3 collapsed-level-2">
+    <div class="flex justify-between items-start mb-1">
+        <h3 class="text-base font-medium text-primary hover:underline transition-colors">
+            <a href="https://www.alphaxiv.org/abs/2604.18257v1" target="_blank" rel="noopener noreferrer">
+                
+            </a>
+        </h3>
+        <span class="score-badge bg-gray-100 text-gray-800">
+            <i class="fa fa-star mr-1"></i>0/10
+        </span>
+    </div>
+    
+    <div class="paper-details">
+        <div class="mb-2 text-base text-gray-700">
+            DocQAC: Adaptive Trie-Guided Decoding for Effective In-Document Query Auto-Completion
+        </div>
+        
+        <div class="mb-2 text-sm text-gray-600 italic">
+            <i class="fa fa-user-circle-o text-gray-500 mr-1"></i>Rahul Mehta, Kavin R, Indrajit Pal, Tushar Abhishek, Pawan Goyal, Manish Gupta
+        </div>
+        
+        
+        
+        
+        <div class="mb-2">
+            <strong class="text-gray-700 text-sm"><i class="fa fa-thumbs-up text-green-500 mr-1"></i>个性化推荐理由:</strong>
+            <p class="text-gray-600 text-sm mt-1"></p>
+        </div>
+        
+        <div class="flex flex-wrap items-center text-xs text-gray-500 pt-2 border-t border-gray-100">
+                <i class="fa fa-calendar-o mr-1"></i> 2026-04-20 13:30:45
+                <span class="mx-2">|</span>
+                <a href="https://arxiv.org/abs/2604.18257v1" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
+                    arXiv:2604.18257v1
+                </a>
+                <span class="mx-2">|</span>
+                <div class="flex flex-wrap"><span class="category-tag">cs.IR</span><span class="category-tag">cs.AI</span><span class="category-tag">cs.CL</span></div>
+            </div>
+            
+            
+            <details class="border-t border-gray-200 pt-4 mt-4">
+                 <summary class="text-sm text-primary cursor-pointer"> 
+                     查看完整摘要 <i class="fa fa-chevron-down ml-1 text-xs"></i> 
+                 </summary> 
+                 <div class="abstract-content mt-2 p-3 bg-gray-50 rounded-md text-sm text-gray-700">
+                    Query auto-completion (QAC) has been widely studied in the context of web search, yet remains underexplored for in-document search, which we term DocQAC. DocQAC aims to enhance search productivity within long documents by helping users craft faster, more precise queries, even for complex or hard-to-spell terms. While global historical queries are available to both WebQAC and DocQAC, DocQAC uniquely accesses document-specific context, including the current document's content and its specific history of user query interactions. To address this setting, we propose a novel adaptive trie-guided decoding framework that uses user query prefixes to softly steer language models toward high-quality completions. Our approach introduces an adaptive penalty mechanism with tunable hyperparameters, enabling a principled trade-off between model confidence and trie-based guidance. To efficiently incorporate document context, we explore retrieval-augmented generation (RAG) and lightweight contextual document signals such as titles, keyphrases, and summaries. When applied to encoder-decoder models like T5 and BART, our trie-guided framework outperforms strong baselines and even surpasses much larger instruction-tuned models such as LLaMA-3 and Phi-3 on seen queries across both seen and unseen documents. This demonstrates its practicality for real-world DocQAC deployments, where efficiency and scalability are critical. We evaluate our method on a newly introduced DocQAC benchmark derived from ORCAS, enriched with query-document pairs. We make both the DocQAC dataset (https://bit.ly/3IGEkbH) and code (https://github.com/rahcode7/DocQAC) publicly available.
                 </div>
             </details>
     </div>
@@ -3751,6 +3067,63 @@
                  </summary> 
                  <div class="abstract-content mt-2 p-3 bg-gray-50 rounded-md text-sm text-gray-700">
                     Empathy is essential for fostering natural interactions in spoken dialogue systems, as it enables machines to recognize the emotional tone of human speech and deliver empathetic responses. Recent research has made significant progress in developing empathetic spoken chatbots based on large language models (LLMs). However, several challenges still exist when training such models, including reliance on costly empathetic speech instruction data and a lack of emotional expressiveness in the generated speech. Finetuning LLM with cross-modal empathetic instruction data may also lead to catastrophic forgetting and a degradation of its general capability. To address these challenges, we propose FreezeEmpath, an end-to-end empathetic spoken chatbot trained in a simple and efficient manner. The entire training process relies solely on existing speech instruction data and speech emotion recognition (SER) data, while keeping the LLM's parameters frozen. Experiments demonstrate that FreezeEmpath is able to generate emotionally expressive speech and outperforms other empathetic models in empathetic dialogue, SER, and SpokenQA tasks, demonstrating the effectiveness of our training strategy.
+                </div>
+            </details>
+    </div>
+</div><!--
+ * @Author: Doragd doragd@users.noreply.github.com
+ * @Date: 2025-10-09 23:23:38
+ * @LastEditors: Doragd doragd@users.noreply.github.com
+ * @LastEditTime: 2025-10-10 00:41:41
+ * @FilePath: /Algorithm-Practice-in-Industry/paperBotV2/frontend/templates/normal_paper_template.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<div class="simple-paper-card p-3 collapsed-level-2">
+    <div class="flex justify-between items-start mb-1">
+        <h3 class="text-base font-medium text-primary hover:underline transition-colors">
+            <a href="https://www.alphaxiv.org/abs/2604.18146v1" target="_blank" rel="noopener noreferrer">
+                
+            </a>
+        </h3>
+        <span class="score-badge bg-gray-100 text-gray-800">
+            <i class="fa fa-star mr-1"></i>0/10
+        </span>
+    </div>
+    
+    <div class="paper-details">
+        <div class="mb-2 text-base text-gray-700">
+            Modular Representation Compression: Adapting LLMs for Efficient and Effective Recommendations
+        </div>
+        
+        <div class="mb-2 text-sm text-gray-600 italic">
+            <i class="fa fa-user-circle-o text-gray-500 mr-1"></i>Yunjia Xi, Menghui Zhu, Jianghao Lin, Bo Chen, Ruiming Tang, Yong Yu, Weinan Zha...
+        </div>
+        
+        
+        
+        
+        <div class="mb-2">
+            <strong class="text-gray-700 text-sm"><i class="fa fa-thumbs-up text-green-500 mr-1"></i>个性化推荐理由:</strong>
+            <p class="text-gray-600 text-sm mt-1"></p>
+        </div>
+        
+        <div class="flex flex-wrap items-center text-xs text-gray-500 pt-2 border-t border-gray-100">
+                <i class="fa fa-calendar-o mr-1"></i> 2026-04-20 12:08:58
+                <span class="mx-2">|</span>
+                <a href="https://arxiv.org/abs/2604.18146v1" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
+                    arXiv:2604.18146v1
+                </a>
+                <span class="mx-2">|</span>
+                <div class="flex flex-wrap"><span class="category-tag">cs.IR</span><span class="category-tag">cs.AI</span><span class="category-tag">cs.CL</span></div>
+            </div>
+            
+            
+            <details class="border-t border-gray-200 pt-4 mt-4">
+                 <summary class="text-sm text-primary cursor-pointer"> 
+                     查看完整摘要 <i class="fa fa-chevron-down ml-1 text-xs"></i> 
+                 </summary> 
+                 <div class="abstract-content mt-2 p-3 bg-gray-50 rounded-md text-sm text-gray-700">
+                    Recently, large language models (LLMs) have advanced recommendation systems (RSs), and recent works have begun to explore how to integrate LLMs into industrial RSs. While most approaches deploy LLMs offline to generate and pre-cache augmented representations for RSs, high-dimensional representations from LLMs introduce substantial storage and computational costs. Thus, it is crucial to compress LLM representations effectively. However, we identify a counterintuitive phenomenon during representation compression: Mid-layer Representation Advantage (MRA), where representations from middle layers of LLMs outperform those from final layers in recommendation tasks. This degraded final layer renders existing compression methods, which typically compress on the final layer, suboptimal. We interpret this based on modularity theory that LLMs develop spontaneous internal functional modularity and force the final layer to specialize in the proxy training task. Thus, we propose \underline{M}odul\underline{a}r \underline{R}epresentation \underline{C}ompression (MARC) to explicitly control the modularity of LLMs. First, Modular Adjustment explicitly introduces compression and task adaptation modules, enabling the LLM to operate strictly as a representation-learning module. Next, to ground each module to its specific task, Modular Task Decoupling uses information constraints and different network structures to decouple tasks. Extensive experiments validate that MARC addresses MRA and produces efficient representations. Notably, MARC achieved a 2.82% eCPM lift in an online A/B test within a large-scale commercial search advertising scenario.
                 </div>
             </details>
     </div>
@@ -11951,7 +11324,7 @@
         let displayMonth = currentDate.getMonth();
         
         // 有论文数据的日期列表
-        const availableDates = ["20251212","20251024","20251205","20251009","20260213","20260227","20260116","20251114","20251030","20260327","20260313","20260326","20251010","20260206","20260113","20251210","20251023","20260310","20260108","20260121","20251016","20260210","20260212","20260205","20260106","20251217","20251120","20260203","20260218","20251105","20251225","20260414","20251127","20260211","20260417","20260224","20251022","20260127","20260114","20251202","20260325","20260128","20260306","20251216","20260101","20251125","20260415","20251119","20260311","20251106","20251118","20260409","20251017","20260331","20260312","20260317","20251209","20260225","20260403","20260115","20251014","20260324","20260421","20251219","20260226","20260416","20260410","20260129","20260320","20251107","20260107","20251121","20251230","20251218","20251112","20251224","20251029","20251204","20251028","20260130","20251021","20260122","20260305","20251223","20251111","20251211","20260217","20260319","20260303","20260123","20251031","20260318","20260408","20260220","20260204","20260109","20260304","20251126","20251113","20251015"];
+        const availableDates = ["20251212","20251024","20251205","20251009","20260213","20260227","20260116","20251114","20251030","20260327","20260313","20260326","20251010","20260206","20260113","20251210","20251023","20260310","20260108","20260121","20251016","20260210","20260212","20260205","20260106","20251217","20251120","20260203","20260407","20260218","20251105","20251225","20260414","20251127","20260211","20260417","20260224","20251022","20260127","20260114","20251202","20260325","20260128","20260306","20251216","20260402","20260101","20251125","20260415","20251119","20260311","20251106","20251118","20260409","20260219","20251017","20260331","20260312","20260317","20251209","20260225","20260403","20260115","20251014","20260324","20260421","20251219","20260226","20260410","20260129","20260320","20251107","20260107","20251121","20251230","20251218","20251112","20251224","20251029","20251204","20251028","20260130","20251021","20260122","20260305","20251223","20251111","20251211","20260217","20260319","20260303","20260123","20251031","20260318","20260408","20260220","20260204","20260109","20260304","20251126","20251113","20251015"];
         
         // 尝试从localStorage恢复选择状态
         const savedDate = localStorage.getItem('selectedDate');
